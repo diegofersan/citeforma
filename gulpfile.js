@@ -53,7 +53,7 @@ function cacheBustTask(){
 // If any change, run scss and js tasks simultaneously
 function watchTask(){
     browserSync.init({
-        server: "./dist"
+        server: "./"
     });
     watch([files.scssPath, files.jsPath],
         {interval: 1000, usePolling: true}, //Makes docker work
@@ -62,7 +62,7 @@ function watchTask(){
             cacheBustTask
         )
     );
-    watch("dist/*.html").on('change', browserSync.reload);
+    watch("*.html").on('change', browserSync.reload);
 }
 
 // gulp.task('server', function(done) {
