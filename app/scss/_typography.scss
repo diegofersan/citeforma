@@ -1,28 +1,39 @@
-h1, h2, h3 {
+h1, h2, h3, p {
+    margin-block-start: 0px;
+    margin-block-end: 16px;
+}
+
+h1, .title-large {
+    font-style: normal;
     font-weight: 700;
-    margin-top: 0px;
+    font-size: em(48);
+    line-height: 1.2em;
 }
 
-h1 {
-    font-size: 2rem;
+h2, .title-medium {
+    font-size: em(40);
+    line-height: 1.2em;
+}
 
-    @media #{$mq-1000-up}{
-        font-size: 3rem;
+h3, .title-small, .subtitle {
+    font-size: em(24);
+    line-height: 1.2em;
+    &.realce {
+        font-weight: bold;
     }
 }
 
-h2 {
-    font-size: 1.5rem;
-
-    @media #{$mq-1000-up}{
-        font-size: 2rem;
+p {
+    font-size: em(18);
+    line-height: 1.5em;
+    &.realce {
+        font-weight: bold;
     }
 }
 
-h3 {
-    font-size: 1.25rem;
-
-    @media #{$mq-1000-up}{
-        font-size: 1.5rem;
-    }
+span.above-title {
+    font-size: em(14);
+    line-height: em(14); 
+    font-weight: 700;
+    text-transform: uppercase;
 }

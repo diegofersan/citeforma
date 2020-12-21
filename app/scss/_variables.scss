@@ -1,22 +1,15 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap);
 
 // Typograph
 $body-family: "Open Sans";
 
 
 // Media Queries
-$mq-620-down: "only screen and (max-width: 620px)";
-$mq-620-up: "only screen and (min-width: 620px)";
+// How to use:
+// @media #{$mq-1000-up}{ }
+$mq-360-down: "only screen and (max-width: 360px)";
 
-$mq-760-down: "only screen and (max-width: 759px)";
-$mq-760-up: "only screen and (min-width: 760px)";
+$mq-768-down: "only screen and (max-width: 768px)";
 
-$mq-900-down: "only screen and (max-width: 899px)";
-$mq-900-up: "only screen and (min-width: 900px)";
-
-$mq-1000-down: "only screen and (max-width: 999px)";
-$mq-1000-up: "only screen and (min-width: 1000px)";
-
-$mq-1180-up: "only screen and (min-width: 1180px)";
-
-$mq-1400-up: "only screen and (min-width: 1400px)";
+$mq-1440-down: "only screen and (max-width: 1439px)";
+$mq-1440-up: "only screen and (min-width: 1440px)";

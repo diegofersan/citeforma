@@ -13,8 +13,4 @@ body {
     color: $gray-01;
     font-family: $body-family, sans-serif;
     line-height: 1.3;
-
-    @media #{$mq-1000-up}{
-        padding: 1.5rem;
-    }
 }
