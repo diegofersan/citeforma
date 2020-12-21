@@ -1,0 +1,60 @@
+.button {
+  transition: all .3s ease-in-out;
+  padding: 16px 32px;
+  text-decoration: none;
+  border-radius: 5px;
+  > span.label {
+    font-size: em(16);
+    text-transform: uppercase;
+    line-height: 1em;
+    text-align: center;
+    font-weight: 700;
+    color: $aux-white;
+  }
+  &.--disabled {
+    background-color: $gray-04;
+    > span.label {
+      color: $gray-03;
+    }
+  }
+  &.--filled-primary {
+    background-color: $green;
+    &:hover {
+      background-color: $green-dark;
+    }
+  }
+  &.--filled-secondary {
+    background-color: $blue;
+    &:hover {
+      background-color: $blue-dark;
+    }
+  }
+  &.--outline-primary {
+    background-color: transparent;
+    border: 1.5px solid $green;
+    > span.label {
+      color: $green;
+    }
+    &:hover {
+      background-color: $green-dark;
+      border-color:$green-dark;
+      > span.label {
+        color: $aux-white;
+      }
+    }
+  }
+  &.--outline-secondary {
+    background-color: transparent;
+    border: 1.5px solid $blue;
+    > span.label {
+      color: $blue;
+    }
+    &:hover {
+      background-color: $blue-dark;
+      border-color:$blue-dark;
+      > span.label {
+        color: $aux-white;
+      }
+    }
+  }
+}
