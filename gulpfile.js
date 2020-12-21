@@ -8,8 +8,8 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
-var replace = require('gulp-replace');
+const replace = require('gulp-replace');
+const browserSync = require('browser-sync').create();
 
 
 // File paths
@@ -52,14 +52,21 @@ function cacheBustTask(){
 // Watch task: watch SCSS and JS files for changes
 // If any change, run scss and js tasks simultaneously
 function watchTask(){
+    browserSync.init({
+        server: "./dist"
+    });
     watch([files.scssPath, files.jsPath],
         {interval: 1000, usePolling: true}, //Makes docker work
         series(
             parallel(scssTask, jsTask),
             cacheBustTask
         )
-    );    
+    );
+    watch("dist/*.html").on('change', browserSync.reload);
 }
+
+// gulp.task('server', function(done) {
+  
 
 // Export the default Gulp task so it can be run
 // Runs the scss and js tasks simultaneously
