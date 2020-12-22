@@ -15,7 +15,6 @@
   &.--two-columns {
     .col {
       width: calc(100%/2);
-      outline: 1px solid red;
       @media #{$mq-mobile-down}{
         width: 100%;
       }
@@ -24,7 +23,6 @@
 }
 
 .container {
-  outline: 1px solid blue;
   &.--padding-v-small {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -56,5 +54,35 @@
   &.--padding-h-extra-large {
     padding-left: 128px;
     padding-right: 128px;
+  }
+}
+
+.container {
+  .caption {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    padding: 32px 0;
+    &.--left {
+      padding-left: 140px;
+      @media #{$mq-tablet-down} {
+        padding-left: 32px;
+      }
+      @media #{$mq-mobile-down} {
+        padding-left: 0px;
+      }
+    }
+    &.--right {
+      padding-right: 140px;
+      @media #{$mq-tablet-down} {
+        padding-right: 32px;
+      }
+      @media #{$mq-mobile-down} {
+        padding-right: 0px;
+      }
+    }
   }
 }

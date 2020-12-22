@@ -14,3 +14,10 @@ body {
     font-family: $body-family, sans-serif;
     line-height: 1.3;
 }
+
+i.component-title {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin: 64px 0 16px;
+}
