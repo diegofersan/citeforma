@@ -3,13 +3,15 @@
 // Typograph
 $body-family: "Open Sans";
 
+// Container width
+$container-max-width: 1440px;
 
 // Media Queries
 // How to use:
 // @media #{$mq-1000-up}{ }
-$mq-360-down: "only screen and (max-width: 360px)";
+$mq-mobile-down: "only screen and (max-width: 600px)";
 
-$mq-768-down: "only screen and (max-width: 768px)";
+$mq-tablet-down: "only screen and (max-width: 768px)";
 
-$mq-1440-down: "only screen and (max-width: 1439px)";
-$mq-1440-up: "only screen and (min-width: 1440px)";
+$mq-desktop-down: "only screen and (max-width: 1439px)";
+$mq-desktop-up: "only screen and (min-width: 1440px)";

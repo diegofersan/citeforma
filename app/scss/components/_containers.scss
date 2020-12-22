@@ -1,0 +1,60 @@
+.container {
+  display: block;
+  width: 100%;
+  >.inner {
+    max-width: $container-max-width;
+    margin: 0 auto;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    @media #{$mq-mobile-down}{
+      flex-direction: column;
+    }
+  }
+  &.--two-columns {
+    .col {
+      width: calc(100%/2);
+      outline: 1px solid red;
+      @media #{$mq-mobile-down}{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.container {
+  outline: 1px solid blue;
+  &.--padding-v-small {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  &.--padding-v-medium {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  &.--padding-v-large {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  &.--padding-v-extra-large {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+  &.--padding-h-small {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  &.--padding-h-medium {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  &.--padding-h-large {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  &.--padding-h-extra-large {
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+}
