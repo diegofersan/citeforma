@@ -1,14 +1,23 @@
 .newsletter {
-  padding: 64px 0;
+  padding: 64px 32px;
   border-bottom: 1px solid rgba($blue-light, 0.2);
   display: flex;
+  @media #{$mq-mobile} {
+    flex-direction: column;
+  }
   &-text{
     width: 85%;
     color: $gray-05;
     height: 100%;
+    @media #{$mq-mobile} {
+      width: 100%;
+    }
   }
   &-button{
     width: 15%;
     height: 100%;
+    @media #{$mq-mobile} {
+      width: 100%;
+    }
   }
 }
