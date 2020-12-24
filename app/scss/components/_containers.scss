@@ -58,7 +58,7 @@
 }
 
 .container {
-  .caption {
+  .col > .caption {
     height: 100%;
     display: flex;
     flex-direction: column;
