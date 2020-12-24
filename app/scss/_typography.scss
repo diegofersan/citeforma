@@ -17,13 +17,13 @@ h2, .title-medium {
 
 h3, .title-small, .subtitle {
     font-size: em(24);
-    line-height: 1.2em;
+    line-height: 1.5em;
     &.realce {
         font-weight: bold;
     }
 }
 
-p {
+p, .paragraph {
     font-size: em(18);
     line-height: 1.5em;
     &.realce {
