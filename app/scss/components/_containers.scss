@@ -8,14 +8,14 @@
   .row {
     display: flex;
     flex-direction: row;
-    @media #{$mq-mobile-down}{
+    @media #{$mq-mobile}{
       flex-direction: column;
     }
   }
   &.--two-columns {
     .col {
       width: calc(100%/2);
-      @media #{$mq-mobile-down}{
+      @media #{$mq-mobile}{
         width: 100%;
       }
     }
@@ -68,19 +68,19 @@
     padding: 32px 0;
     &.--left {
       padding-left: 140px;
-      @media #{$mq-tablet-down} {
+      @media #{$mq-tablet} {
         padding-left: 32px;
       }
-      @media #{$mq-mobile-down} {
+      @media #{$mq-mobile} {
         padding-left: 0px;
       }
     }
     &.--right {
       padding-right: 140px;
-      @media #{$mq-tablet-down} {
+      @media #{$mq-tablet} {
         padding-right: 32px;
       }
-      @media #{$mq-mobile-down} {
+      @media #{$mq-mobile} {
         padding-right: 0px;
       }
     }

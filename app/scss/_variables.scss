@@ -9,9 +9,8 @@ $container-max-width: 1440px;
 // Media Queries
 // How to use:
 // @media #{$mq-1000-up}{ }
-$mq-mobile-down: "only screen and (max-width: 600px)";
+$mq-mobile: "only screen and (max-width: 768px)";
 
-$mq-tablet-down: "only screen and (max-width: 768px)";
+$mq-tablet: "only screen and (max-width: 1140px)";
 
-$mq-desktop-down: "only screen and (max-width: 1439px)";
-$mq-desktop-up: "only screen and (min-width: 1440px)";
+$mq-desktop: "only screen and (min-width: 1141px)";

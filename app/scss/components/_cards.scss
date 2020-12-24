@@ -18,26 +18,26 @@ ul.cards-group {
     flex-direction: column;
     width: calc(100% / 4 - 18px);
     margin-bottom: 40px;
-    @media #{$mq-tablet-down} {
+    @media #{$mq-tablet} {
       width: calc(100% / 2 - 12px);
     }
-    @media #{$mq-mobile-down} {
+    @media #{$mq-mobile} {
       width: 100%;
     }
     &:nth-child(2n+0) {
-      @media #{$mq-tablet-down} {
+      @media #{$mq-tablet} {
         margin-left: 24px ;
       }
-      @media #{$mq-mobile-down} {
+      @media #{$mq-mobile} {
         margin-left: 0px;
       }
     }
     &:not(:nth-child(4n+0)) {
       margin-right: 24px;
-      @media #{$mq-mobile-down} {
+      @media #{$mq-mobile} {
         margin-right: 0px;
       }
-      @media #{$mq-tablet-down} {
+      @media #{$mq-tablet} {
         margin-right: 0px;
       }
     }
