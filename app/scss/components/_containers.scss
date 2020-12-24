@@ -118,7 +118,7 @@
   &.--business {
     background-color: $blue-darker;
     .row {
-      min-height: 580px;
+      min-height: 500px;
     }
     .col {
       &:nth-child(1n+0) {
@@ -143,18 +143,33 @@
     }
   }
   &.--internal-header {
-    background-position: center;
-    background-size: cover;
-    .inner {
-      height: 100%;
-      min-height: 500px;
+    background-color: $blue-light;
+    .row {
       display: flex;
+      justify-content: space-between;
+      @media #{$mq-mobile} {
+        flex-direction: column-reverse;
+      }
     }
-    .title {
-      color: $gray-01;
+    .caption {
+      h1 {
+        color: $gray-01;
+      }
+      p {
+        color: $gray-02;
+      }
     }
-    .subtitle {
-      color: $gray-02;
+    .col {
+      &:nth-child(2n+0) {
+
+      }
+      &:nth-child(1n+0) {
+        max-width: 100%;
+        padding: 32px;
+        min-height: 40vh;
+        background-size: cover;
+        background-position: center;
+      }
     }
   }
 }
