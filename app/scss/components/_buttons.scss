@@ -5,6 +5,9 @@
   border-radius: 5px;
   display: inline-block;
   color: $aux-white;
+  > span:nth-child(2n+2) {
+    margin-left: 16px;
+  }
   > span.label {
     font-size: em(16);
     text-transform: uppercase;
@@ -14,6 +17,8 @@
   }
   &.--full-width {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
   &.--disabled {
     background-color: $gray-04;
