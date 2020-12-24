@@ -142,4 +142,19 @@
       color: $blue-light;
     }
   }
+  &.--internal-header {
+    background-position: center;
+    background-size: cover;
+    .inner {
+      height: 100%;
+      min-height: 500px;
+      display: flex;
+    }
+    .title {
+      color: $gray-01;
+    }
+    .subtitle {
+      color: $gray-02;
+    }
+  }
 }
